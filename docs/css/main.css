@@ -28,9 +28,10 @@ p {
 
 }
 
-.yellow {
+.black {
     /* background-color: #FFAE00; */
-    background-color:rgba(21,80,95,0) ;
+    /* background-color:rgba(21,80,95,0) ; */
+    background-color: rgb(14, 16, 17);
 }
 
 .df {
@@ -70,15 +71,15 @@ p {
 .grey6rem {
     /* font-family: 'Montserrat'; */
     color: #191D27;
-    font-weight: 600;
-    font-size: 6rem;
+    font-weight: 400;
+    font-size: 4rem;
     line-height: 1.1;
 }
 .grey5rem {
     /* font-family: 'Montserrat'; */
     color: #191D27;
     font-weight: 600;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.1;
 
 }
@@ -239,6 +240,9 @@ a:hover {
 .dummy08 {
     height: 4rem;
 }
+.dummy06 {
+    height: 6rem;
+}
 
 .dummy02 {
     height: 2rem;
@@ -279,7 +283,7 @@ li.menu-text {
 
 .blue {
 
-    color: #263846;
+    color: #009EFF;
 
 }
 
