@@ -14,7 +14,7 @@ div {
 
 body {
 
-
+    /* background-color: rgb(217, 217, 214); */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
@@ -30,9 +30,9 @@ p {
 }
 
 .black {
-    background-color: black;
+    /* background-color: black; */
     /* background-color:rgba(21,80,95,0) ; */
-    /* background-color: rgb(14, 16, 17); */
+    background-color: rgb(0, 59, 92);
 }
 
 .df {
@@ -290,7 +290,8 @@ li.menu-text {
 
 
 .black {
-    color: black;
+    /* color: black; */
+    /* background-color: rgb(0, 59, 92); */
 }
 
 .whitesmoke {
@@ -300,7 +301,8 @@ li.menu-text {
 
 .blue {
 
-    color: #009EFF;
+    /* color: #009EFF; */
+    color: rgb(113, 219, 212);
 
 }
 
