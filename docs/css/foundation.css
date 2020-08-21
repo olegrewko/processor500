@@ -8316,7 +8316,7 @@ a.thumbnail image {
 }
 
 .top-bar {
-  background-color: rgb(14, 16, 17);
+  /* background-color: rgb(14, 16, 17); */
   /* background-color: #263846; */
   color: #191D27;
   display: -webkit-box;
@@ -8347,7 +8347,7 @@ a.thumbnail image {
   font-size: 0.8rem;
 
   color: #191D27;
-  /* background-color:rgba(0,129,138,0.2) ; */
+
 }
 
 .top-bar input {
