@@ -3782,12 +3782,33 @@ a:focus {
 a img {
   border: 0;
 }
+.hr00 {
+  clear: both;
+  max-width: 75rem;
+  height: 0;
+  margin: 1.4rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0px solid #cacaca;
+  border-left: 0;
 
+}
+.hr01 {
+  clear: both;
+  max-width: 75rem;
+  height: 0;
+  margin: 1.4rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0;
+
+}
 hr {
   clear: both;
   max-width: 75rem;
   height: 0;
-  margin: 1.25rem auto;
+  margin: 0rem auto;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #cacaca;
@@ -5514,7 +5535,7 @@ screen and (min-width: 64em) {
   margin-bottom: 1rem;
   padding-right: 1rem;
   margin-right: 1rem;
-  border: 0px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
   border-radius: 0;
   background: #fefefe;
   -webkit-box-shadow: none;
@@ -8316,7 +8337,7 @@ a.thumbnail image {
 }
 
 .top-bar {
-  /* background-color: rgb(14, 16, 17); */
+  background-color: rgba(21, 80, 95, 0);
   /* background-color: #263846; */
   color: #191D27;
   display: -webkit-box;
@@ -8347,7 +8368,7 @@ a.thumbnail image {
   font-size: 0.8rem;
 
   color: #191D27;
-
+  /* background-color:rgba(0,129,138,0.2) ; */
 }
 
 .top-bar input {
