@@ -399,3 +399,65 @@
     </div>
   </div>
 </section>
+<!-- После подключения Swiper JS и CSS добавьте этот скрипт -->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Проверяем, есть ли слайдер на странице
+    const heroSlider = document.querySelector('.product-hero__slider');
+
+    if (heroSlider) {
+      // Инициализация Swiper
+      const swiper = new Swiper(heroSlider, {
+        // Основные параметры
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        speed: 500,
+
+        // Пагинация (точки)
+        pagination: {
+          el: '.product-hero__pag',
+          clickable: true,
+          type: 'bullets',
+        },
+
+        // Навигация (стрелки) - если нужны
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // Автопрокрутка
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+
+        // Эффекты
+        effect: 'slide', // или 'fade', 'cube', 'coverflow' и т.д.
+
+        // Отзывчивость
+        breakpoints: {
+          // при 768px
+          768: {
+            slidesPerView: 1,
+          }
+        },
+
+        // События для отладки
+        on: {
+          init: function () {
+            console.log('Swiper инициализирован');
+          },
+          slideChange: function () {
+            console.log('Слайд изменен на: ', this.activeIndex);
+          }
+        }
+      });
+
+      console.log('Hero слайдер создан:', swiper);
+    } else {
+      console.log('Hero слайдер не найден на странице');
+    }
+  });
+</script> -->

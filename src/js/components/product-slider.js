@@ -15,7 +15,14 @@ if (vars.heroSlider) {
     pagination: {
       el: ".hero__pag",
       clickable: true,
-    }
+    },
+      pagination: {
+      el: '.hero__pag', // Должен совпадать с классом в HTML
+      clickable: true,
+      type: 'bullets', // Явно укажите тип
+      bulletClass: 'swiper-pagination-bullet', // Класс для точек
+      bulletActiveClass: 'swiper-pagination-bullet-active', // Класс для активной точки
+    },
   });
 }
 // 1. Импортируем Swiper и его модули
