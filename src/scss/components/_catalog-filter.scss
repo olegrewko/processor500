@@ -1,0 +1,215 @@
+
+.catalog-filter {
+  max-width: 474px;
+  width: 100%;
+  &__price {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    &-divider {
+      font-family: 'Rubik';
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--color-secondary);
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__inner {
+    /* Эти свойства КРИТИЧЕСКИ важны */
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out !important;
+    overflow: hidden !important;
+    will-change: max-height;
+    padding: 0 20px;
+    // margin: 0 10px;
+  }
+
+  &__block {
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    padding: 1px;
+
+    /* Это важно для absolute позиционирования кнопки */
+    margin-right: 40px;
+
+    /* Место для кнопки */
+
+    &--open {
+      .catalog-filter__inner {
+        max-height: 500px;
+        /* Достаточно большое значение */
+        opacity: 1;
+      }
+
+      .catalog-filter__btn {
+        transform: rotate(180deg);
+
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Rubik';
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+
+  &__btn {
+
+    position: absolute;
+    right: 24px;
+    top: 32px;
+    width: 20px;
+    height: 20px;
+    // Увеличиваем область клика
+      padding: 10px;
+      margin: -10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+      width: 16px;
+      height: 2px;
+      background-color: var(--color-primary);
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+      width: 2px;
+      height: 16px;
+      background-color: var(--color-primary);
+      transform: translate(-50%, -50%);
+      // transform: translate(-50%, -50%) scale(0.5); // Добавляем уменьшение
+      transition: all 0.3s ease;
+    }
+     &:focus {
+                               outline: 0px dashed var(--color--warning);
+                               outline-offset: 0px;
+                               transition: all 0.3s ease;
+    }
+
+    &:focus-visible {
+                     outline: 2px dashed var(--color-primary);
+                       outline-offset: 4px;
+                  border-radius: 4px;
+    }
+
+
+}
+}
+
+/* price-slider.css */
+.catalog-filter__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-filter__price-input {
+  width: 100px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.catalog-filter__price-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.catalog-filter__price-divider {
+  color: #666;
+  font-weight: 500;
+}
+
+.price-range {
+  margin: 20px 0;
+}
+
+/* Кастомизация noUiSlider */
+.noUi-target {
+  background: #f0f0f0;
+  border-radius: 3px;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connect {
+  background: var(--color-primary, #007bff);
+}
+
+.noUi-handle {
+  width: 20px !important;
+  height: 20px !important;
+  background: #fff;
+  border: 2px solid var(--color-primary, #007bff);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  display: none;
+}
+
+.noUi-handle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.noUi-handle:focus {
+  outline: none;
+}
+
+/* Для touch устройств */
+.noUi-handle-touch-area {
+  width: 40px !important;
+  height: 40px !important;
+}

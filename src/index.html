@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+  <div class="site-container">
+    <div class="overlay"></div>
+    @include('partials/header.html')
+    <main class="main">
+
+      @include('partials/hero.html')
+      @include('partials/loop-scroll.html')
+      @include('partials/main-cat.html')
+      @include('partials/products.html')
+      @include('partials/subscribe.html')
+    </main>
+    @include('partials/popup.html')
+    @include('partials/modal.html')
+    @include('partials/footer.html')
+    
+  </div>
+  <script defer src="js/main.js"></script>
+
+</body>
+
+</html>

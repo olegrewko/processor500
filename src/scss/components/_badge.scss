@@ -1,0 +1,16 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--color-accent);
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
